@@ -6,6 +6,7 @@
     <title>ivan-quiz-app</title>
     <link rel="stylesheet" href="./styles.css" />
     <script src="/index.js" defer></script>
+    <script src="./form.js" defer></script>
   </head>
 
   <body>
@@ -15,7 +16,7 @@
 
     <main>
       <section class="question-container">
-        <section class="question-card">
+        <section class="question-card" data-js="question-card">
           <img
             class="bookmark-transparent bookmark-light"
             data-js="bookmark-light"
@@ -36,7 +37,9 @@
           </h4>
           <button data-js="answer-button">Show Answer</button>
 
-          <p class="answer-one-hidden" data-js="answer-one">Central Perk</p>
+          <p class="question-title answer-one-hidden" data-js="answer-one">
+            Central Perk
+          </p>
 
           <section class="tag-container">
             <p class="tag">#coffeshop</p>

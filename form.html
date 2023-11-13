@@ -13,23 +13,23 @@
     <h1 class="title">F.r.i.e.n.d.s Quiz</h1>
   </header>
 
-  <body>
-<form>
+  <body data-js="body">
+<form data-js="form">
   <section class="form-container">
-    <label for="your-question">Your question:</label>
-    <div></div>
-    <textarea name="your-question" id="your-question" rows="3"></textarea>
-<div></div>
+    <label for="your-question" class="question-title">Your question:</label>
+    
+    <textarea name="yourQuestion" id="your-question" rows="3" maxlength="150" data-js="your-question"></textarea>
 
-    <label for="your-answer">Your answer:</label>
-    <div></div>
-    <textarea name="your-answer" id="your-answer" rows="3"></textarea>
-<div></div>
-    <label for="tag">Tag:</label>
-    <div></div>
-    <input type="text" name="tag" id="tag" />
 
-    <div></div>
+    <label for="your-answer" class="question-title question-title-form">Your answer:</label>
+    
+    <textarea name="yourAnswer" id="your-answer" rows="3" maxlength="150"></textarea>
+
+    <label for="tag" class="question-title question-title-form">Tag:</label>
+   
+    <input type="text" name="tag" id="tag"  maxlength="150"/>
+
+   
     <button type="submit" class="question--button" data-js="submit-button">Submit</button>
   </section>
 
