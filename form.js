@@ -57,7 +57,7 @@ questionInput.addEventListener("input", (event) => {
 answerInput.addEventListener("input", (event) => {
   const answerLength = event.target.value.length;
 
-  console.log(answerInput);
+  console.log(answerLength);
 
   let charactersLeft = 150 - answerLength;
   answerCharactersLeft.textContent = `${charactersLeft} characters left`;
