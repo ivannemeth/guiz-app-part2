@@ -13,64 +13,77 @@
     <h1 class="title">F.r.i.e.n.d.s Quiz</h1>
   </header>
 
-  <body>
-<form>
-  <section class="form-container">
-    <label for="your-question">Your question:</label>
-    <div></div>
-    <textarea name="your-question" id="your-question" rows="3"></textarea>
-<div></div>
+  <body data-js="body">
+    <form data-js="form">
+      <section class="form-container">
+        <label for="your-question" class="question-title">Your question:</label>
 
-    <label for="your-answer">Your answer:</label>
-    <div></div>
-    <textarea name="your-answer" id="your-answer" rows="3"></textarea>
-<div></div>
-    <label for="tag">Tag:</label>
-    <div></div>
-    <input type="text" name="tag" id="tag" />
+        <textarea
+          name="yourQuestion"
+          id="your-question"
+          rows="3"
+          maxlength="150"
+          data-js="question-input"
+          required
+        ></textarea>
+        <p data-js="question-characters-left" class="tag">
+          150 characters left
+        </p>
 
-    <div></div>
-    <button type="submit" class="question--button" data-js="submit-button">Submit</button>
-  </section>
+        <label for="your-answer" class="question-title question-title-form"
+          >Your answer:</label
+        >
 
-</form>
+        <textarea
+          name="yourAnswer"
+          id="your-answer"
+          rows="3"
+          maxlength="150"
+          data-js="answer-input"
+          required
+        ></textarea>
+        <p data-js="answer-characters-left" class="tag">150 characters left</p>
+        <label for="tag" class="question-title question-title-form">Tag:</label>
 
-  </body>
+        <input type="text" name="tag" id="tag" maxlength="150" />
 
-  <footer>
-    <nav class="navigation-bar">
-      <a href="./index.html">
-        <img
-          class="footer--icon"
-          src="./resources/home.png"
-          alt="home icon"
-        />
-      </a>
-      <a href="./bookmarks.html">
-        <img
-          class="footer--icon"
-          src="./resources/bookmark_transparent.png"
-          alt="bookmark icon"
-        />
-        <a href="./form.html">
+        <button type="submit" class="question--button" data-js="submit-button">
+          Submit
+        </button>
+      </section>
+    </form>
+
+    <footer>
+      <nav class="navigation-bar">
+        <a href="./index.html">
+          <img
+            class="footer--icon"
+            src="./resources/home.png"
+            alt="home icon"
+          />
+        </a>
+        <a href="./bookmarks.html">
+          <img
+            class="footer--icon"
+            src="./resources/bookmark_transparent.png"
+            alt="bookmark icon"
+          />
+          <a href="./form.html">
             <img
               class="footer--icon"
               src="./resources/question.png"
               alt="question icon"
             />
           </a>
-
-      </a>
-      <a href="./profile.html">
-        <img
-          class="footer--icon"
-          src="./resources/profile.png"
-          alt="profile icon"
-        />
-      </a>
-    </nav>
-  </footer>
-</body>
+        </a>
+        <a href="./profile.html">
+          <img
+            class="footer--icon"
+            src="./resources/profile.png"
+            alt="profile icon"
+          />
+        </a>
+      </nav>
+    </footer>
+  </body>
 </html>
-
-
