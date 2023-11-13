@@ -9,3 +9,12 @@
 .question-title-form {
   padding-top: 30px;
 }
+
+.question--button {
+  align-self: center;
+}
+
+/*main {
+  display: flex;
+  justify-content: center;
+}*/
