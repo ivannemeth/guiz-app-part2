@@ -1,0 +1,16 @@
+.navigation-bar {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  position: fixed;
+  padding-top: 10px;
+  bottom: 0;
+  width: 100vw;
+  background-color: var(--main-background-colour);
+  border-radius: 15px 15px 0 0;
+}
+
+.footer--icon {
+  width: 35px;
+  height: auto;
+}

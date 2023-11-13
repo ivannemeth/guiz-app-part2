@@ -1,0 +1,16 @@
+.title {
+  text-transform: uppercase;
+  font-size: 2.8rem;
+  text-align: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  /*text-shadow: 2px 2px 4px rgb(78, 78, 121);*/
+  background-color: var(--main-background-colour);
+  color: var(--title-colour);
+  position: fixed;
+  padding: 8px;
+  top: 0px;
+  box-shadow: 2px 2px 4px rgb(80, 12, 103);
+  width: 100vw;
+  border-radius: 0 0 15px 15px;
+  z-index: 1;
+}
