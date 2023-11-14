@@ -30,8 +30,24 @@ form.addEventListener("submit", (event) => {
   section.innerHTML = `
  
   <section class="question-card">
+  <img
+            class="bookmark-transparent bookmark-light"
+            data-js="bookmark-light"
+            src="./resources/bookmark.png"
+            alt="bookmark transparent"
+          />
+
+          <img
+            class="bookmark-transparent bookmark-dark hidden"
+            data-js="bookmark-dark"
+            src="./resources/bookmark_filled.png"
+            alt="bookmark transparent"
+          />
   <h4 class="question-title"> ${question} </h4>
+ 
   <p class="question-title"> ${answer} </p>
+  </h4>
+         
   <section class="tag-container">
             <p class="tag"> ${tag} </p>
           </section>
@@ -41,6 +57,7 @@ form.addEventListener("submit", (event) => {
   console.log(section);
 
   body.append(section);
+  event.target.reset();
 });
 
 /* character count */
